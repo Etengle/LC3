@@ -1,0 +1,56 @@
+Script started on Fri Dec 13 01:55:47 2013
+Sun Microsystems Inc.   SunOS 8 
+=================================================================
+ Host: cs25.cs.nthu.edu.tw              (Sun Blade2000 + 8G RAM)
+=================================================================
+[1m-----------------------------------------------------------------[0m
+[1m All Computer Center information are posted on News: nthu.cs.cc  [0m
+[1m-----------------------------------------------------------------[0m
+-------------------------------------------------------------------
+| [7m<< WARNING >>[0m PLEASE DO _NOT_ submit more than _1_ job  at the  |
+|      same time; otherwise, your account will be suspended !!    |
+|-----------------------------------------------------------------|
+|[7m[Äµ§i]¬°«O»Ù¨Ï¥Î CPU ªº¤½¥­©Ê, ¦P¤@¨Ï¥ÎªÌ, ½Ð¤Å¦P¤@®É¶¡°õ¦æ¤@­Ó  [0m|
+|[7m      ¥H¤Wªº JOB , ¹HªÌ¤@¸gµo²{, ¼È°±±b¸¹¤@¶g !! ÁÂÁÂ±zªº¦X§@ !! [0m|
+-------------------------------------------------------------------
+
+
+ª`·N:   SUN¤u§@¯¸¸sªº cs20, cs21, cs22, cs23, cs24, cs25, cs26 µ¥¤C³¡
+       ¾÷¾¹¤W,­­¨î¨C¦ì¨Ï¥ÎªÌ¤@­Ó¾÷¾¹­­¤@­Ó¤u§@(Job), ¹HªÌ°±¥Î±b¸¹.
+       ­­¨î¨C¦ì¨Ï¥ÎªÌ¤@­Ó¾÷¾¹­­¤@­Ó¤u§@(Job), ¹HªÌ°±¥Î±b¸¹. ¨ä¥L
+       ¾÷¾¹¤£­­¨î. ½Ð¨Ï¥ÎªÌ°t¦X. ÁÂÁÂ.
+
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%ls
+[0m/usr/local/bin/gnuls: .: Stale NFS file handle
+total 11kB
+  512 [0mtypescript[0m  1.6kB [01;34m.[0m/  1.6kB [01;34m..[0m/  6.2kB [01;32mdisasm.c[0m*  1.1kB [01;32mcountchar.obj[0m*
+[m[1;7mcs25[m:[1m~/hw11[m(f101021120)%cc disasm.c 
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%a.out countchar.obj 
+        .ORIG x3000
+xx3000  AND     R2, R2, #0
+xx3001  LD      R3, xx3013      ;;PCoffset9 x11
+xx3002  TRAP    x20             ;;GETC
+xx3003  LDR     R1, R3, #0
+xx3004  ADD     R4, R1, #-4
+xx3005  BRz     xx300e          ;;PCoffset9 x8
+xx3006  NOT     R1, R1
+xx3007  ADD     R1, R1, R0
+xx3008  NOT     R1, R1
+xx3009  BRnp    xx300b          ;;PCoffset9 x1
+xx300a  ADD     R2, R2, #1
+xx300b  ADD     R3, R3, #1
+xx300c  LDR     R1, R3, #0
+xx300d  BRnzp   xx3004          ;;PCoffset9 xfff6
+xx300e  LD      R0, xx3012      ;;PCoffset9 x3
+xx300f  ADD     R0, R0, R2
+xx3010  TRAP    x21             ;;OUT
+xx3011  TRAP    x25             ;;HALT
+xx3012          .FILL x30
+xx3013          .FILL x4000
+        .END
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%a.out countchar.obj > output.asm
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%exit[K[K[K[Kmv typescript typescript Part1
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%exit
+exit
+
+script done on Fri Dec 13 01:56:58 2013

@@ -1,0 +1,176 @@
+Script started on Mon Jan 20 22:41:17 2014
+Sun Microsystems Inc.   SunOS 8 
+=================================================================
+ Host: cs25.cs.nthu.edu.tw              (Sun Blade2000 + 8G RAM)
+=================================================================
+[1m-----------------------------------------------------------------[0m
+[1m All Computer Center information are posted on News: nthu.cs.cc  [0m
+[1m-----------------------------------------------------------------[0m
+-------------------------------------------------------------------
+| [7m<< WARNING >>[0m PLEASE DO _NOT_ submit more than _1_ job  at the  |
+|      same time; otherwise, your account will be suspended !!    |
+|-----------------------------------------------------------------|
+|[7m[Äµ§i]¬°«O»Ù¨Ï¥Î CPU ªº¤½¥­©Ê, ¦P¤@¨Ï¥ÎªÌ, ½Ð¤Å¦P¤@®É¶¡°õ¦æ¤@­Ó  [0m|
+|[7m      ¥H¤Wªº JOB , ¹HªÌ¤@¸gµo²{, ¼È°±±b¸¹¤@¶g !! ÁÂÁÂ±zªº¦X§@ !! [0m|
+-------------------------------------------------------------------
+
+
+ª`·N:   SUN¤u§@¯¸¸sªº cs20, cs21, cs22, cs23, cs24, cs25, cs26 µ¥¤C³¡
+       ¾÷¾¹¤W,­­¨î¨C¦ì¨Ï¥ÎªÌ¤@­Ó¾÷¾¹­­¤@­Ó¤u§@(Job), ¹HªÌ°±¥Î±b¸¹.
+       ­­¨î¨C¦ì¨Ï¥ÎªÌ¤@­Ó¾÷¾¹­­¤@­Ó¤u§@(Job), ¹HªÌ°±¥Î±b¸¹. ¨ä¥L
+       ¾÷¾¹¤£­­¨î. ½Ð¨Ï¥ÎªÌ°t¦X. ÁÂÁÂ.
+
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%ls
+[0m/usr/local/bin/gnuls: .: Stale NFS file handle
+total 55kB
+  512 [0mtypescript[0m    1.1kB [01;32mtest01.asm[0m*  1.1kB [01;32mtest05.asm[0m*  1.1kB [01;32mtest09.asm[0m*     1.1kB [01;32mcounter.obj[0m*
+1.6kB [01;34m.[0m/            1.1kB [01;32mtest02.asm[0m*  1.1kB [01;32mtest06.asm[0m*  2.1kB [01;32mtest10.asm[0m*     1.1kB [01;32mstr.obj[0m*
+2.6kB [01;34m..[0m/           1.1kB [01;32mtest03.asm[0m*  1.1kB [01;32mtest07.asm[0m*  1.1kB [01;32mtest11.asm[0m*      18kB [01;32ma.out[0m*
+1.1kB [01;32mcounter.asm[0m*  1.1kB [01;32mtest04.asm[0m*  1.1kB [01;32mtest08.asm[0m*   13kB [0mLC3assembler.c[0m  4.1kB [0mReadme.txt[0m
+[m[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%vim counter.asm
+7[?47h[?1h=[>c[1;31r[27m[m[H[2J[?25l[31;1H"counter.asm" [noeol][dos] 29L, 355C[1;5H[1m[33m.ORIG[m   [1m[36mX3000
+[m    [1m[36mAND[m [1m[36mR2[m, [1m[36mR2[m, #[1m[35m0[m
+    [1m[36mLD[m  [1m[36mR3[m, [1m[36mPTR
+[m    [1m[36mGETC
+[m    [1m[36mLDR[m [1m[36mR1[m, [1m[36mR3[m, #[1m[35m0[m
+;[1m[36mTest
+TEST[m    [1m[36mADD[m [1m[36mR4[m, [1m[36mR1[m, #-[1m[35m4[m
+    [1m[36mBRz[m [1m[36mOUTPUT[m
+;[1m[36m Match[11;5HNOT[m [1m[36mR1[m, [1m[36mR1
+[m    [1m[36mADD[m     [1m[36mR1[m, [1m[36mR1[m, [1m[36mR0
+[m    [1m[36mNOT[m [1m[36mR1[m, [1m[36mR1
+[m    [1m[36mBRnp[m    [1m[36mGETCHAR
+[m    [1m[36mADD[m [1m[36mR2[m, [1m[36mR2[m, #[1m[35m1[m
+
+[1m[36mGETCHAR[m [1m[36mADD[m [1m[36mR3[m, [1m[36mR3[m, #[1m[35m1[m
+    [1m[36mLDR[m [1m[36mR1[m, [1m[36mR3[m, #[1m[35m0[m
+    [1m[36mBRnzp[m   [1m[36mTEST
+
+OUTPUT[m  [1m[36mLD[m  [1m[36mR0[m, [1m[36mASCII
+[m    [1m[36mADD[m [1m[36mR0[m, [1m[36mR0[m, [1m[36mR2
+[m    [1m[36mOUT
+[m    [1m[36mHALT
+
+ASCII[m   [1m[33m.FILL[m   [1m[35m0030[m
+[1m[36mPTR[m [1m[33m.FILL[m   [1m[36mx4000[m[29;5H[1m[33m.END[m
+[1m[34m~                                                                                                      [m[31;86H29,5-8[8CAll[29;8H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[31;76HZ[29;8H[?25h[?25l[31;77HZ[29;8H
+
+[?1l>[?25h[2J[?47l8[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%vim counter.asm[15Dls[KA countchar[11Dcat test11.sym[14DA test11.asm[K[5D0.asm[6D09.asm[5D8.asm[5D7.asm[5D6.asm[5D5.asm[5D.asm[K4.asm[5D3.asm[5D2.asm[12Ddiff test01.obj str.obj[23Dcat test01.sym[K[14DA test01.asm[K[12Ddiff counter.obj countchar.obj[30Dcat countchar.sym[K[17DA countchar.asm[K[15Dcc LC3assembler.c[17DA countchar.asm[K[15Dcat countchar.sym[17Ddiff counter.obj countchar.obj[30DA test01.asm[K[12Ddiff counter.obj countchar.obj[30Dcat countchar.sym[K[17DA countchar.asm[K[15Dcc LC3assembler.c[16Dp counter.asm countchar.asm[28Dvim counter.asm[K[15Dls[Kvim counter.asm[15Dcp counter.asm countchar.asm
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%a.out.a.out[5D/a.out[5Da.out countchar.asm
+Assembling countchar.asm
+Starting Pass 1...
+Pass 1 - 0 error(s)
+Starting Pass 2...
+Pass 2 - 0 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%cat countchar.sym
+// Symbol table
+// Scope level 0:
+//      Symbol table       Page Address
+//      -----------------  ------------
+//      TEST               3004
+//      GETCHAR            300B
+//      OUTPUT             300E
+//      ASCII              3012
+//      PTR                3013
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%diffcat countchar.sym[17D./a.out countchar.asm[21Dcp counter.asm countchar.asm[28Dvim counter.asm[K[15Dls[KA countchar[11Dcat test11.sym[14DA test11.asm[K[5D0.asm[6D09.asm[5D8.asm[5D7.asm[5D6.asm[5D5.asm[5D.asm[K4.asm[5D3.asm[5D2.asm[12Ddiff test01.obj str.obj[23Dcat test01.sym[K[14DA test01.asm[K[12Ddiff counter.obj countchar.obj[30Dcat countchar.sym[K[17Ddiff counter.obj countchar.obj
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%diff counter.obj countchar.obj[30Dcat countchar.sym[K[17D./a.out countchar.asm[21Dcp counter.asm countchar.asm[28D./a.out countchar.asm[Km[K[K[K[K[K[K[K[K[K[K[K[K[Ktest01.asm
+Assembling test01.asm
+Starting Pass 1...
+Pass 1 - 0 error(s)
+Starting Pass 2...
+Pass 2 - 0 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test01.asm[18Ddiff counter.obj countchar.obj[30D./a.out test01.asm[K[18Ddiff counter.obj countchar.obj[30Dcat countchar.sym[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktest01.sym
+// Symbol table
+// Scope level 0:
+//      Symbol table       Page Address
+//      -----------------  ------------
+//      TEST               3007
+//      OUTPUT             3008
+//      GETCHAR            3029
+//      ASCII              3030
+//      PTR                3031
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%cat test01.sym[14D./a.out test01.asm[18Ddiff counter.obj countchar.obj[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktest01.obj str.obj 
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%diff test01.obj str.obj[23Dcat test01.sym[K[14D./a.out test01.asm.asm[K2.asm
+Assembling test02.asm
+Starting Pass 1...
+Line 16: Duplicate label 'TEST' found with label on line 9
+Pass 1 - 1 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test02.asm.asm[K3.asm
+Assembling test03.asm
+Starting Pass 1...
+Pass 1 - 0 error(s)
+Starting Pass 2...
+Line 4: Instruction references undefined label 'PT'
+Line 4: Instruction references non-address memory location -1
+^[[APass 2 - 2 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test03.asm.asm[K4.asm
+Assembling test04.asm
+Starting Pass 1...
+Line 6: 256 can not be represented as a signed number in 9 bits
+Pass 1 - 1 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test04.asm.asm[K5.asm
+Assembling test05.asm
+Starting Pass 1...
+Line 8: Already have .ORIG before, but found another .ORIG here
+Pass 1 - 1 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test05.asm.asm[K6.asm
+Assembling test06.asm
+Starting Pass 1...
+Line 2: Expected .ORIG, but found 'ADD' instead
+Pass 1 - 1 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test06.asm.asm[K7.asm
+Assembling test07.asm
+Starting Pass 1...
+Line 35: Expected .END at the end of file
+Pass 1 - 1 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test07.asm.asm[K8.asm
+Assembling test08.asm
+Starting Pass 1...
+Line 3: Expected register operand, but found 'A1' instead
+Line 3: Invalid label '0X0'
+Pass 1 - 2 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test08.asm.asm[K9.asm
+Assembling test09.asm
+Starting Pass 1...
+Line 22: -1 can not be represented as an unsigned number in 16 bits
+Pass 1 - 1 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test09.asm.asm[K.asm[K1.asm0.asm
+Assembling test10.asm
+Starting Pass 1...
+Pass 1 - 0 error(s)
+Starting Pass 2...
+Line 1538: Instruction references label 'TEST' that cannot be represented in a 9 bit signed PC offset
+Line 3: Instruction references label 'PTR' that cannot be represented in a 9 bit signed PC offset
+^[[APass 2 - 0 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test10.asm.asm[K1.asm
+Assembling test11.asm
+Starting Pass 1...
+Pass 1 - 0 error(s)
+Starting Pass 2...
+Pass 2 - 0 error(s)
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%cat test11.sym
+// Symbol table
+// Scope level 0:
+//      Symbol table                 Page Address
+//      ---------------------------  ------------
+//      TEST123456789123456789       3007
+//      OUTPUT                       3008
+//      GETCHAR                      3029
+//      ASCII                        3030
+//      PTR                          3031
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%cat test11.sym[14D./a.out test11.asmsm[K[K[K[K
+file name must end with .asm
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%./a.out test1111[K2.asm
+file doesn't exist
+[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%ls
+[0mtotal 69kB
+4.1kB [0mtypescript[0m      1.1kB [01;32mtest02.asm[0m*  1.1kB [01;32mtest08.asm[0m*     1.1kB [01;32mcounter.obj[0m*  1.1kB [0mcountchar.sym[0m
+1.6kB [01;34m.[0m/              1.1kB [01;32mtest03.asm[0m*  1.1kB [01;32mtest09.asm[0m*     1.1kB [01;32mstr.obj[0m*      1.1kB [0mtest01.sym[0m
+2.6kB [01;34m..[0m/             1.1kB [01;32mtest04.asm[0m*  2.1kB [01;32mtest10.asm[0m*     1.1kB [0mtest01.obj[0m    1.1kB [0mtest03.sym[0m
+1.1kB [01;32mcountchar.asm[0m*  1.1kB [01;32mtest05.asm[0m*  1.1kB [01;32mtest11.asm[0m*     1.1kB [0mtest10.obj[0m    1.1kB [0mtest10.sym[0m
+1.1kB [01;32mcounter.asm[0m*    1.1kB [01;32mtest06.asm[0m*   13kB [0mLC3assembler.c[0m  1.1kB [0mtest11.obj[0m    1.1kB [0mtest11.sym[0m
+1.1kB [01;32mtest01.asm[0m*     1.1kB [01;32mtest07.asm[0m*  1.1kB [0mcountchar.obj[0m    18kB [01;32ma.out[0m*        4.1kB [0mReadme.txt[0m
+[m[1;7mcs25[m:[1m~/assemblerfinal[m(f101021120)%exit
+exit
+
+script done on Mon Jan 20 22:43:33 2014

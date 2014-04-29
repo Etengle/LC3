@@ -1,0 +1,33 @@
+Script started on Fri Dec 13 02:01:11 2013
+Sun Microsystems Inc.   SunOS 8 
+=================================================================
+ Host: cs25.cs.nthu.edu.tw              (Sun Blade2000 + 8G RAM)
+=================================================================
+[1m-----------------------------------------------------------------[0m
+[1m All Computer Center information are posted on News: nthu.cs.cc  [0m
+[1m-----------------------------------------------------------------[0m
+-------------------------------------------------------------------
+| [7m<< WARNING >>[0m PLEASE DO _NOT_ submit more than _1_ job  at the  |
+|      same time; otherwise, your account will be suspended !!    |
+|-----------------------------------------------------------------|
+|[7m[Äµ§i]¬°«O»Ù¨Ï¥Î CPU ªº¤½¥­©Ê, ¦P¤@¨Ï¥ÎªÌ, ½Ð¤Å¦P¤@®É¶¡°õ¦æ¤@­Ó  [0m|
+|[7m      ¥H¤Wªº JOB , ¹HªÌ¤@¸gµo²{, ¼È°±±b¸¹¤@¶g !! ÁÂÁÂ±zªº¦X§@ !! [0m|
+-------------------------------------------------------------------
+
+
+ª`·N:   SUN¤u§@¯¸¸sªº cs20, cs21, cs22, cs23, cs24, cs25, cs26 µ¥¤C³¡
+       ¾÷¾¹¤W,­­¨î¨C¦ì¨Ï¥ÎªÌ¤@­Ó¾÷¾¹­­¤@­Ó¤u§@(Job), ¹HªÌ°±¥Î±b¸¹.
+       ­­¨î¨C¦ì¨Ï¥ÎªÌ¤@­Ó¾÷¾¹­­¤@­Ó¤u§@(Job), ¹HªÌ°±¥Î±b¸¹. ¨ä¥L
+       ¾÷¾¹¤£­­¨î. ½Ð¨Ï¥ÎªÌ°t¦X. ÁÂÁÂ.
+
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%ls
+[0m/usr/local/bin/gnuls: .: Stale NFS file handle
+total 23kB
+  512 [0mtypescript[0m       1.6kB [01;34m.[0m/   1.1kB [0moutput.asm[0m  1.1kB [01;32mcountchar.obj[0m*  7.7kB [01;32ma.out[0m*
+2.1kB [0mtypescriptPart1[0m  1.6kB [01;34m..[0m/  6.2kB [01;32mdisasm.c[0m*   1.1kB [01;32moutput.obj[0m*
+[m[1;7mcs25[m:[1m~/hw11[m(f101021120)%diff countchar.obj ou[K[Koutput.obj
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%mv typescript typescriptPart2
+[1;7mcs25[m:[1m~/hw11[m(f101021120)%exit
+exit
+
+script done on Fri Dec 13 02:01:48 2013
