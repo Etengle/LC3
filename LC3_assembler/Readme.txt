@@ -6,13 +6,12 @@ AUTHOR
 ======
 	
 	NTHU 
-	Department of Mathematics 
-	Student ID: 101021120 
-	Name: Yu Xiang, Zheng
+	Department of Mathematics
+	Department of Computer Science
+	Ph.D. Student
+	Name: Yu Hsiang, Cheng
 	Nickname: Slighten
-	E-mail: zz687@yahoo.com.tw
-	FB: https://www.facebook.com/Slighten.Zheng
-	Phone number: 0923576510
+	E-mail: slightencheng@gmail.com
 
 INTRODUCTION
 ============
